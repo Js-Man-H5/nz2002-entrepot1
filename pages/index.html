@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/forum.css">
+    <link rel="stylesheet" href="./icon3/iconfont.css">
+    
+    <style>
+        @media all and (max-width: 1500px) {
+           
+            .contation {
+                width: 1230px
+            }
+            
+            section {
+                width: 840px;
+            }
+
+            aside {
+                width: 350px;
+            }
+
+            aside .down a {
+                width: 250px;
+            }
+
+            main hr {
+                margin-left: 31px;
+                margin-right: 31px;
+            }
+
+            main .active::after {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-164%);
+                bottom: -11px;
+                content: "";
+                display: block;
+                width: 82px;
+                height: 1px;
+                background-color: #e67e22;
+            }
+
+            aside .label .link {
+                margin-left: 41px;
+                margin-top: 26px;
+                width: 253px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* footer .main .partner h2.active::after {
+                position: absolute;
+                width:auto
+                display: block;
+                content: "";
+                height: 1px;
+                color: #95938e;
+                left: 50%;
+                bottom: -10px;
+                transform: translateX(-148%);
+            } */
+        }
+
+        @media all and (max-width: 1200px) {
+            
+            .contation {
+                width: 1000px
+            }
+
+            section {
+                width: 700px;
+            }
+
+            aside {
+                width: 260px;
+            }
+
+            aside .down a {
+                width: 200px;
+            }
+
+            main hr {
+                margin-left: 21px;
+                margin-right: 21px;
+            }
+
+            aside .label .link a {
+                padding: 0 9px;
+                color: #869595;
+                display: inline-block;
+                line-height: 20px;
+                border: 1px solid #869595;
+                margin-left: 13px;
+                margin-top: 8px;
+            }
+
+            aside .label .link {
+                margin-left: 41px;
+                margin-top: 13px;
+                width: 203px;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 12px;
+            }
+
+            main .active::after {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-164%);
+                bottom: -11px;
+                content: "";
+                display: block;
+                width: 54px;
+                height: 1px;
+                background-color: #e67e22;
+            }
+
+        }
+
+        @media all and (max-width:980px) {
+            .contation {
+                width: 720px
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .zd {
+                margin: 0 auto;
+            }
+
+          
+
+            aside {
+               width: auto
+               
+            }
+            aside .active::after{position: absolute; left: 7.4em;;bottom: -.5em; content: "";display: block; width: 112px; height: 1px; background-color: #e67e22; }
+          
+
+           
+
+            header nav {
+                display: none;
+            }
+
+            header .menu span {
+                font-size: 30px;
+            }
+
+            .list {
+                background-color: #ebebeb;
+                display: block;
+            }
+            
+
+            .list ul {
+                overflow: hidden;
+                
+                padding: 0 30px;
+                border-bottom: 2px solid #e1e1e1;
+                width:auto;
+                height: 0px;
+                margin-bottom: 50px;
+                background-color: white;
+                transition: .5s;
+            }
+
+            .list ul li {
+                width: auto;
+                line-height: 50px;
+                font-size: 16px;
+                 
+
+            }
+            .list ul li a{
+                color: black;
+                transition: .3s;
+            }
+            .list ul li a:hover{color: #e67e22;}
+            .list ul li:nth-of-type(2) {
+                border-bottom: 1px solid #e67e22;
+            }
+            header{position: relative;}
+            header .menu {
+                border-bottom: 3px solid #e1e1e1;
+                border-top: 1px solid #ebebeb;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 17px;
+                height: 72px;
+              
+                position: absolute;
+                bottom: 0px;
+                /* margin-top: 113px; */
+            }
+         
+            
+        }
+        @media all and (max-width:768px) {
+            section .img input[type="textarea"]{width:80%; margin-left: 2em;height: 80px;}
+            .contation {
+                width: auto;
+                margin: 0 15px;
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .zd {
+                margin: 0 auto;
+            }
+
+            section .img{width:100%;}
+            aside {
+               width: auto
+               
+            }
+            aside .active::after{position: absolute; left: 7.4em;;bottom: -.5em; content: "";display: block; width: 112px; height: 1px; background-color: #e67e22; }
+          
+
+           
+
+            header nav {
+                display: none;
+            }
+
+            header .menu span {
+                font-size: 30px;
+            }
+
+            .list {
+                background-color: #ebebeb;
+                display: block;
+            }
+            
+
+            .list ul {
+                overflow: hidden;
+                padding: 0 30px;
+                border-bottom: 2px solid #e1e1e1;
+                height: 0px;
+                transition: 0.5s;
+                width:auto
+                
+               
+            }
+
+            .list ul li {
+                width: auto;   
+                font-size: 16px;
+            }
+            .list ul li a{color: black;transition: .3s;}
+            .list ul li a:hover{color: #e67e22;}
+            /* .list ul li:nth-of-type(2) {
+                border-bottom: 1px solid #e67e22;
+            } */
+         
+         
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="contation-fluid">
+        <header>
+            <h1>Ghost 开源博客平台</h1>
+            <nav>
+                <ul>
+                    <li><a href="./html/index.html">首页</a></li>
+                    <li class="active" name="lt"><a href="#">论坛</a></li>
+                    <li><a href="./html/subpage.html">快捷手册</a></li>
+                    <li><a href="#">中文文档</a></li>
+                    <li><a href="./html/page.html">关于</a></li>
+
+                </ul>
+            </nav>
+            <div class="menu">
+                <span class="lis iconfont icon-changyongicon-" name="click"></span>
+            </div>
+            
+        </header>
+        <div class="list">
+            <ul >
+                <li><a href="./html/index.html">首页</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="./html/subpage.html">快捷手册</a></li>
+                <li><a href="#">中文文档</a></li>
+                <li><a href="./html/page.html">关于</a></li>
+            </ul>
+        </div>
+        <!-- html main  -->
+        <main>
+            <div class="content contation">
+                <div class="zd">
+                    <section>
+                      
+                        <div class="img">
+                            <img src="https://ps.ssl.qhimg.com/t0133a84c57d3e996f1.jpg" alt="">
+                            <input type="textarea" value="嗯，这个博客还可以啊">
+                        </div>
+                        <div class="img">
+                            <img src="https://ps.ssl.qhimg.com/t018a19d596e53bf01a.jpg" alt="">
+                            <input type="textarea" value="一般一般，简简单单">
+                        </div>
+                        <div class="img">
+                            <img src="https://ps.ssl.qhimg.com/t01b52c76352070292f.jpg" alt="">
+                            <input type="textarea" value="程序员的好地方">
+                        </div>
+                        <div class="img">
+                            <img src="https://ps.ssl.qhimg.com/t01c08a9f11e53994ba.jpg" alt="">
+                            <input type="textarea" value="面朝大海春暖花开">
+                        </div>
+                        <div class="odiv">
+                            
+                            <div class="img1">
+                                <img src="https://ps.ssl.qhimg.com/t01d4a5295ac54f8d00.jpg" alt="">
+                                <input type="textarea" value="" name="val" >
+                         </div>
+                         
+                        </div>
+                        
+
+                        
+                       
+                        <button name="but">发帖</button>
+                        <input type="button" value="退出登陆" class="but1">
+                    </section>
+                  
+                    
+                </div>
+                <aside>
+                    <div class="statement">
+                        <h2 class="active">声明</h2>
+                        <hr>
+                        <p>Ghost 中文版不再继续维护，请去官方下载。</p>
+                    </div>
+                    <div class="down">
+                        <h2 class="active">下载 Ghost</h2>
+                        <hr>
+                        <a href="#">Ghost 最新版</a>
+                    </div>
+                    <div class="label">
+                        <h2 class="active">标签云</h2>
+                        <hr>
+                        <div class="link">
+                            <a href="#">Ghost</a>
+                            <a href="#">新版本发布</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">Promise</a>
+                            <a href="#">主题</a>
+                            <a href="#">Node.js</a>
+                            <a href="#">MySQL</a>
+                            <a href="#">Ghost</a>
+                            <a href="#">新版本发布</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">Promise</a>
+                            <a href="#">主题</a>
+                            <a href="#">Node.js</a>
+                            <a href="#">MySQL</a>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="contation-fluid">
+            <div class="main contation">
+                <div class="both">
+                    <h2 class="active">友链</h2>
+                    <hr>
+                    <div class="link">
+                        <a href="#">Bootstrap中文网</a>
+                        <a href="#"> Lodash中文文档</a>
+                        <a href="#">jQuery中文文档</a>
+                        <a href="#">Lodash中文文档</a>
+                        <a href="#">Bootstrap中文网</a>
+                        <a href="#">Lodash中文文档</a>
+                        <a href="#">Bootstrap中文网</a>
+                        <a href="#">Lodash中文文档</a>
+                        <a href="#">Bootstrap中文网</a>
+                        <a href="#">Lodash中文文档</a>
+                    </div>
+                </div>
+                <div class="label">
+                    <h2 class="active">标签云</h2>
+                    <hr>
+                    <div class="link">
+                        <a href="#">Ghost</a>
+                        <a href="#">新版本发布</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">Promise</a>
+                        <a href="#">主题</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">MySQL</a>
+                        <a href="#">Ghost</a>
+                        <a href="#">新版本发布</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">Promise</a>
+                        <a href="#">主题</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">MySQL</a>
+                    </div>
+                </div>
+                <div class="partner">
+                    <h2 class="active">合作伙伴</h2>
+                    <hr>
+                    <div class="link">
+                        <a href="#">腾讯</a>
+                        <a href="">阿里巴巴</a>
+                        <a href="">百度</a>
+                        <a href="">小米</a>
+                        <a href="">小米</a>
+                        <a href="">小米</a>
+                        <a href="">小米</a>
+                        <a href="">小米</a>
+                        <a href="">小米</a>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="bottom">
+                <p>
+                    Copyright © Ghost中文网 | 京ICP备11008151号-11 | 京公网安备11010802014853
+                </p>
+            </div>
+        </footer>
+    </div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/cookie.js"></script>
+<script>
+    //点击列表
+    let oClick=document.querySelector('[name="click"]')
+    
+    let oUl=document.querySelector('.list ul')
+   oClick.addEventListener('click',()=>{
+       if(oUl.style.height!=='250px'){
+        oUl.style.height='250px'
+       }else{
+        oUl.style.height='0px'
+       }
+   })
+   $('.but1').click(function(){
+      setCookie('login','1',-1)
+      window.alert('退出成功!')
+      return false
+  })
+
+
+  let val=($('[name="val"]')).val()
+  let str=''
+       
+       str+=`<div class="img1" name="dd">
+                            <img src="https://ps.ssl.qhimg.com/t01d4a5295ac54f8d00.jpg" alt="">
+                            <input type="textarea" value=''>
+                        </div>
+                        
+                        `
+           
+      $('.odiv').append(str)
+      let dd= 
+      $('[name="dd"]').remove()
+   $('[name="but"]').click(function(){
+   
+    var cool= getCookie(document.cookie)
+   if(cool.login !=='1'){
+           let bool=window.confirm('您还未登录,是否跳转登陆页面！')
+           if(bool==true){
+               window.location.href='./login.html'
+           }
+           return false
+      }
+     
+      let str=''
+       
+       str+=`<div class="img1">
+                            <img src="https://ps.ssl.qhimg.com/t01d4a5295ac54f8d00.jpg" alt="">
+                            <input type="textarea" value=${val}>
+                        </div>
+                        
+                        `
+           
+      $('.odiv').append(str)
+        
+   })
+ 
+   
+   
+
+</script>
+</body>
+</html>
